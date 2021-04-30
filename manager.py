@@ -140,7 +140,7 @@ class Monitor():
         # you can optionally use ts.NOTIFY_FOR_ALL_SESSIONS
         ts.WTSRegisterSessionNotification(self.hWnd, ts.NOTIFY_FOR_THIS_SESSION)
 
-        Log("Monitor init")
+        log("Monitor init")
         changeLockScreenImage()
         changeBackgroundImage()
 
@@ -178,6 +178,6 @@ class Monitor():
         changeLockScreenImage()
 
 if __name__ == '__main__':
-    Log("Script start")
+    log("Script start")
     Monitor()
     gui.PumpMessages()
